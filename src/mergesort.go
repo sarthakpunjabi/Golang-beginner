@@ -1,9 +1,9 @@
 package main
+
 //21183147
 
 import (
 	"fmt"
-	
 )
 
 func Merge(data1 []float64, data2 []float64) (result []float64) {
@@ -58,11 +58,10 @@ func RunMultiMergeSort(data []float64) (multiResult []float64) {
 	return
 }
 
-
 func main() {
 
 	//static input
-	arr := []float64{10,15,20,23,26,50,3,2,6}
+	arr := []float64{10, 15, 20, 23, 26, 50, 3, 2, 6}
 	ans := RunMultiMergeSort(arr)
 	fmt.Println(ans)
 

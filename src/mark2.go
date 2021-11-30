@@ -1,15 +1,15 @@
 package main
 
-import(
+import (
 	"fmt"
 	"log"
 )
 
-func main(){
+func main() {
 	fmt.Println("Start")
-	defer func(){
-		if err:= recover();err!=nil{
-			log.Println("Error",err)
+	defer func() {
+		if err := recover(); err != nil {
+			log.Println("Error", err)
 		}
 	}()
 	panic("Something went wrong")

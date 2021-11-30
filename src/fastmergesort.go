@@ -1,10 +1,8 @@
-
 package main
 
 import (
 	"fmt"
 	"sync"
-	
 )
 
 func Merge(data1 []float64, data2 []float64) (result []float64) {
@@ -74,8 +72,8 @@ func gomultiplemerge(data []float64) []float64 {
 func main() {
 
 	//static input
-	arr := []float64{10,15,20,23,26,50,3,2,6}
+	arr := []float64{10, 15, 20, 23, 26, 50, 3, 2, 6}
 	ans := gomultiplemerge(arr)
 	fmt.Println(ans)
-	
+
 }
